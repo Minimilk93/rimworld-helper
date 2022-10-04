@@ -1,0 +1,812 @@
+{
+  "food-0": {
+    "name": "Nutrient paste meal",
+    "primary_category": "Food",
+    "secondary_category": "Meal",
+    "desc": "A synthetic mixture of protein, carbohydrates, and vitamins, amino acids and minerals. Everything the body needs, and absolutely disgusting.",
+    "baseStats": {
+      "market_value": "10",
+      "stack_limit": "10",
+      "mass": "0.44 kg",
+      "hp": "50",
+      "deterioration_rate": "10",
+      "flammability": "100%",
+      "days_to_start_rot": "0.75",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.9",
+      "taste": "Awful",
+      "ingested_direct_thought": "AteNutrientPasteMeal",
+      "maximum_to_ingest": "1"
+    },
+    "crafting": {
+      "crafted_at": "",
+      "work_to_make": "0 ticks (0 secs)",
+      "resources_to_make": "0.3 Nutrition (any)"
+    }
+  },
+  "food-1": {
+    "name": "Simple meal",
+    "primary_category": "Food",
+    "secondary_category": "Meal",
+    "desc": "A simple meal quickly cooked from a few ingredients.",
+    "baseStats": {
+      "market_value": "15",
+      "stack_limit": "10",
+      "mass": "0.44 kg",
+      "hp": "50",
+      "deterioration_rate": "10",
+      "flammability": "100%",
+      "days_to_start_rot": "4",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.9",
+      "taste": "Simple",
+      "maximum_to_ingest": "1"
+    },
+    "crafting": {
+      "crafted_at": "//",
+      "skill_required": "Cooking",
+      "work_to_make": "300 ticks (5 secs)",
+      "resources_to_make": "0.5 Nutrition (any)"
+    }
+  },
+  "food-2": {
+    "name": "Fine meal",
+    "primary_category": "Food",
+    "secondary_category": "Meal",
+    "desc": "A complex dish assembled with care from a wide selection of ingredients.",
+    "baseStats": {
+      "market_value": "20",
+      "stack_limit": "10",
+      "mass": "0.44 kg",
+      "hp": "50",
+      "deterioration_rate": "10",
+      "flammability": "100%",
+      "days_to_start_rot": "4",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.9",
+      "taste": "Fine",
+      "ingested_direct_thought": "AteFineMeal",
+      "maximum_to_ingest": "1"
+    },
+    "crafting": {
+      "crafted_at": "/",
+      "skill_required": "Cooking 6",
+      "work_to_make": "450 ticks (7.5 secs)",
+      "resources_to_make": "0.25 Nutrition (non-vegan) + 0.25 Nutrition (vegan)"
+    }
+  },
+  "food-3": {
+    "name": "Vegetarian fine meal",
+    "primary_category": "Food",
+    "secondary_category": "Meal",
+    "desc": "A complex dish assembled with care from vegetarian ingredients.",
+    "baseStats": {
+      "market_value": "20",
+      "stack_limit": "10",
+      "mass": "0.44 kg",
+      "hp": "50",
+      "deterioration_rate": "10",
+      "flammability": "100%",
+      "days_to_start_rot": "4",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.9",
+      "taste": "Fine",
+      "ingested_direct_thought": "AteFineMeal",
+      "maximum_to_ingest": "1"
+    },
+    "crafting": {
+      "crafted_at": "/",
+      "skill_required": "Cooking 6",
+      "work_to_make": "450 ticks (7.5 secs)",
+      "resources_to_make": "0.75 Nutrition (vegetarian)"
+    }
+  },
+  "food-4": {
+    "name": "Carnivore fine meal",
+    "primary_category": "Food",
+    "secondary_category": "Meal",
+    "desc": "A complex dish assembled with care from meat ingredients.",
+    "baseStats": {
+      "market_value": "20",
+      "stack_limit": "10",
+      "mass": "0.44 kg",
+      "hp": "50",
+      "deterioration_rate": "10",
+      "flammability": "100%",
+      "days_to_start_rot": "4",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.9",
+      "taste": "Fine",
+      "ingested_direct_thought": "AteFineMeal",
+      "maximum_to_ingest": "1"
+    },
+    "crafting": {
+      "crafted_at": "/",
+      "skill_required": "Cooking 6",
+      "work_to_make": "450 ticks (7.5 secs)",
+      "resources_to_make": "0.75 Nutrition (meat)"
+    }
+  },
+  "food-5": {
+    "name": "Packaged survival meal",
+    "primary_category": "Food",
+    "secondary_category": "Meal",
+    "desc": "A high-quality packaged meal, manufactured for use in survival situations. While it never rots, it can still deteriorate if left outside. Great for traveling.",
+    "baseStats": {
+      "market_value": "24",
+      "stack_limit": "10",
+      "mass": "0.3 kg",
+      "hp": "50",
+      "deterioration_rate": "0.25",
+      "flammability": "100%",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.9",
+      "taste": "Simple",
+      "maximum_to_ingest": "1"
+    },
+    "crafting": {
+      "crafted_at": "/",
+      "required_research": "Packaged survival meal",
+      "skill_required": "Cooking 8",
+      "work_to_make": "450 ticks (7.5 secs)",
+      "resources_to_make": "0.3 Nutrition (non-vegan) + 0.3 Nutrition (vegan)"
+    }
+  },
+  "food-6": {
+    "name": "Carnivore lavish meal",
+    "primary_category": "Food",
+    "secondary_category": "Meal",
+    "desc": "A masterpiece of the culinary arts, this meal nourishes the body, mind, and soul.",
+    "baseStats": {
+      "market_value": "40",
+      "stack_limit": "10",
+      "mass": "0.44 kg",
+      "hp": "50",
+      "deterioration_rate": "10",
+      "flammability": "100%",
+      "days_to_start_rot": "4",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "1",
+      "taste": "Lavish",
+      "ingested_direct_thought": "AteLavishMeal",
+      "maximum_to_ingest": "1"
+    },
+    "crafting": {
+      "crafted_at": "/",
+      "skill_required": "Cooking 8",
+      "work_to_make": "800 ticks (13.33 secs)",
+      "resources_to_make": "1.25 Nutrition (meat)"
+    }
+  },
+  "food-7": {
+    "name": "Lavish meal",
+    "primary_category": "Food",
+    "secondary_category": "Meal",
+    "desc": "A masterpiece of the culinary arts, this meal nourishes the body, mind, and soul.",
+    "baseStats": {
+      "market_value": "40",
+      "stack_limit": "10",
+      "mass": "0.44 kg",
+      "hp": "50",
+      "deterioration_rate": "10",
+      "flammability": "100%",
+      "days_to_start_rot": "4",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "1",
+      "taste": "Lavish",
+      "ingested_direct_thought": "AteLavishMeal",
+      "maximum_to_ingest": "1"
+    },
+    "crafting": {
+      "crafted_at": "/",
+      "skill_required": "Cooking 8",
+      "work_to_make": "800 ticks (13.33 secs)",
+      "resources_to_make": "0.5 Nutrition (non-vegan) + 0.5 Nutrition (vegan)"
+    }
+  },
+  "food-8": {
+    "name": "Vegetarian lavish meal",
+    "primary_category": "Food",
+    "secondary_category": "Meal",
+    "desc": "A masterpiece of the culinary arts, this meal nourishes the body, mind, and soul.",
+    "baseStats": {
+      "market_value": "40",
+      "stack_limit": "10",
+      "mass": "0.44 kg",
+      "hp": "50",
+      "deterioration_rate": "10",
+      "flammability": "100%",
+      "days_to_start_rot": "4",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "1",
+      "taste": "Lavish",
+      "ingested_direct_thought": "AteLavishMeal",
+      "maximum_to_ingest": "1"
+    },
+    "crafting": {
+      "crafted_at": "/",
+      "skill_required": "Cooking 8",
+      "work_to_make": "800 ticks (13.33 secs)",
+      "resources_to_make": "1.25 Nutrition (vegetarian)"
+    }
+  },
+  "food-9": {
+    "name": "Insect meat",
+    "primary_category": "Food",
+    "secondary_category": "Raw food",
+    "desc": "Raw butchered flesh. If necessary, can be cooked into meals, or even eaten raw. Extremely unappetizing.",
+    "baseStats": {
+      "market_value": "0.5",
+      "mass": "0.03 kg",
+      "beauty": "-4",
+      "hp": "60",
+      "deterioration_rate": "6",
+      "flammability": "50%",
+      "days_to_start_rot": "2"
+    },
+    "detailedStats": {
+      "nutrition": "0.05",
+      "taste": "Raw",
+      "food_poison chance": "2%"
+    },
+    "crafting": {}
+  },
+  "food-10": {
+    "name": "Hay",
+    "primary_category": "Food",
+    "secondary_category": "Raw food",
+    "desc": "Nutrient-rich grasses and shoots, harvested and compacted for storage. Hay is good animal feed, but inedible for humans.",
+    "baseStats": {
+      "market_value": "0.6",
+      "stack_limit": "200",
+      "mass": "0.014 kg",
+      "hp": "60",
+      "deterioration_rate": "6",
+      "flammability": "150%",
+      "days_to_start_rot": "60",
+      "rotatable": "False",
+      "path_cost": "15"
+    },
+    "detailedStats": { "nutrition": "0.05" },
+    "crafting": {}
+  },
+  "food-11": {
+    "name": "Human meat",
+    "primary_category": "Food",
+    "secondary_category": "Raw food",
+    "desc": "Raw butchered flesh. Can be cooked into meals or eaten raw, although most humans dislike the idea.",
+    "baseStats": {
+      "market_value": "0.8",
+      "mass": "0.03 kg",
+      "beauty": "-4",
+      "hp": "60",
+      "deterioration_rate": "6",
+      "flammability": "50%",
+      "days_to_start_rot": "2"
+    },
+    "detailedStats": {
+      "nutrition": "0.05",
+      "taste": "Raw",
+      "food_poison chance": "2%"
+    },
+    "crafting": {}
+  },
+  "food-12": {
+    "name": "Agave fruit",
+    "primary_category": "Food",
+    "secondary_category": "Raw food",
+    "desc": "Raw agave fruit.",
+    "baseStats": {
+      "market_value": "1.1",
+      "stack_limit": "75",
+      "mass": "0.03 kg",
+      "hp": "100",
+      "deterioration_rate": "6",
+      "flammability": "100%",
+      "days_to_start_rot": "25",
+      "rotatable": "False",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.05",
+      "taste": "Raw",
+      "ingested_direct_thought": "AteRawFood",
+      "food_poison chance": "2%"
+    },
+    "crafting": {}
+  },
+  "food-13": {
+    "name": "Raw fungus",
+    "primary_category": "Food",
+    "secondary_category": "Raw food",
+    "desc": "Raw fungus obtained by harvesting fungi growing in caves. It cannot be farmed.",
+    "baseStats": {
+      "market_value": "1.1",
+      "stack_limit": "75",
+      "mass": "0.03 kg",
+      "hp": "60",
+      "days_to_start_rot": "40",
+      "rotatable": "False",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.05",
+      "taste": "Raw",
+      "ingested_direct_thought": "AteRawFood"
+    },
+    "crafting": {}
+  },
+  "food-14": {
+    "name": "Corn",
+    "primary_category": "Food",
+    "secondary_category": "Raw food",
+    "desc": "Raw corn.",
+    "baseStats": {
+      "market_value": "1.1",
+      "stack_limit": "75",
+      "mass": "0.03 kg",
+      "hp": "100",
+      "deterioration_rate": "6",
+      "flammability": "100%",
+      "days_to_start_rot": "60",
+      "rotatable": "False",
+      "path_cost": "15"
+    },
+    "detailedStats": { "nutrition": "0.05", "taste": "Raw" },
+    "crafting": {}
+  },
+  "food-15": {
+    "name": "Potatoes",
+    "primary_category": "Food",
+    "secondary_category": "Raw food",
+    "desc": "Raw potatoes.",
+    "baseStats": {
+      "market_value": "1.1",
+      "stack_limit": "75",
+      "mass": "0.03 kg",
+      "hp": "100",
+      "deterioration_rate": "6",
+      "flammability": "100%",
+      "days_to_start_rot": "30",
+      "rotatable": "False",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.05",
+      "taste": "Raw",
+      "ingested_direct_thought": "AteRawFood"
+    },
+    "crafting": {}
+  },
+  "food-16": {
+    "name": "Rice",
+    "primary_category": "Food",
+    "secondary_category": "Raw food",
+    "desc": "A low grain plant that thrives in rich soil and yields food fast, but is not nice to eat uncooked.",
+    "baseStats": {
+      "market_value": "1.1",
+      "stack_limit": "75",
+      "mass": "0.03 kg",
+      "hp": "100",
+      "deterioration_rate": "6",
+      "flammability": "100%",
+      "days_to_start_rot": "40",
+      "rotatable": "False",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.05",
+      "taste": "Raw",
+      "ingested_direct_thought": "AteRawFood"
+    },
+    "crafting": {}
+  },
+  "food-17": {
+    "name": "Berries",
+    "primary_category": "Food",
+    "secondary_category": null,
+    "desc": "Assorted berries. Nice to eat, even when raw.",
+    "baseStats": {
+      "type": "Food",
+      "market_value": "1.2",
+      "stack_limit": "75",
+      "mass": "0.027 kg",
+      "hp": "100",
+      "deterioration_rate": "6",
+      "flammability": "100%",
+      "days_to_start_rot": "14",
+      "rotatable": "False",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.05",
+      "taste": "Simple",
+      "food_poison chance": "2%"
+    },
+    "crafting": {}
+  },
+  "food-18": {
+    "name": "Milk",
+    "primary_category": "Food",
+    "secondary_category": "Raw food",
+    "desc": "Milk from an animal.",
+    "baseStats": {
+      "market_value": "1.9",
+      "stack_limit": "75",
+      "mass": "0.045 kg",
+      "hp": "60",
+      "deterioration_rate": "10",
+      "flammability": "20%",
+      "days_to_start_rot": "14",
+      "path_cost": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.05",
+      "taste": "raw",
+      "food_poison chance": "2%"
+    },
+    "crafting": {}
+  },
+  "food-19": {
+    "name": "Meat",
+    "primary_category": "Food",
+    "secondary_category": "Raw food",
+    "desc": "Raw butchered flesh. Can be cooked into meals or eaten raw, although most humans dislike the idea.",
+    "baseStats": {
+      "market_value": "2",
+      "mass": "0.03 kg",
+      "beauty": "-4",
+      "hp": "60",
+      "deterioration_rate": "6",
+      "flammability": "50%",
+      "days_to_start_rot": "2"
+    },
+    "detailedStats": {
+      "nutrition": "0.05",
+      "taste": "Raw",
+      "food_poison chance": "2%"
+    },
+    "crafting": {}
+  },
+  "food-20": {
+    "name": "Chicken egg (unfert.)",
+    "primary_category": "Food",
+    "secondary_category": "Raw Food",
+    "desc": "Unfertilized chicken egg. It can be eaten raw, but it's much, much better cooked.",
+    "baseStats": {
+      "market_value": "7",
+      "stack_limit": "75",
+      "mass": "0.15 kg",
+      "hp": "20",
+      "deterioration_rate": "2",
+      "flammability": "70%",
+      "days_to_start_rot": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.25",
+      "taste": "raw",
+      "food_poison chance": "20%"
+    },
+    "crafting": {}
+  },
+  "food-21": {
+    "name": "Duck egg (unfert.)",
+    "primary_category": "Food",
+    "secondary_category": "Raw Food",
+    "desc": "Unfertilized duck egg. It can be eaten raw, but it's much, much better cooked.",
+    "baseStats": {
+      "market_value": "7",
+      "stack_limit": "75",
+      "mass": "0.15 kg",
+      "hp": "20",
+      "deterioration_rate": "10",
+      "flammability": "100%",
+      "days_to_start_rot": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.25",
+      "taste": "raw",
+      "food_poison chance": "20%"
+    },
+    "crafting": {}
+  },
+  "food-22": {
+    "name": "Chicken egg (fert.)",
+    "primary_category": "Food",
+    "secondary_category": "Raw Food",
+    "desc": "Fertilized chicken egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.",
+    "baseStats": {
+      "market_value": "7",
+      "stack_limit": "75",
+      "mass": "0.15 kg",
+      "hp": "20",
+      "deterioration_rate": "2",
+      "flammability": "70%",
+      "days_to_start_rot": "15",
+      "min_safe temperature": "0 °C (32 °F)",
+      "max_safe temperature": "50 °C (122 °F)",
+      "spoiling_rate": "0.003%"
+    },
+    "detailedStats": {
+      "nutrition": "0.25",
+      "taste": "raw",
+      "food_poison chance": "20%"
+    },
+    "crafting": {}
+  },
+  "food-23": {
+    "name": "Duck egg (fert.)",
+    "primary_category": "Food",
+    "secondary_category": "Raw Food",
+    "desc": "Fertilized duck egg. If all goes well, it should hatch into a duckling. It can be eaten raw, but it's much better cooked.",
+    "baseStats": {
+      "market_value": "7",
+      "stack_limit": "75",
+      "mass": "0.15 kg",
+      "hp": "20",
+      "deterioration_rate": "2",
+      "flammability": "70%",
+      "days_to_start_rot": "15",
+      "min_safe temperature": "0 °C (32 °F)",
+      "max_safe temperature": "50 °C (122 °F)",
+      "spoiling_rate": "0.003%"
+    },
+    "detailedStats": {
+      "nutrition": "0.25",
+      "taste": "raw",
+      "food_poison chance": "20%"
+    },
+    "crafting": {}
+  },
+  "food-24": {
+    "name": "Insect jelly",
+    "primary_category": "Food",
+    "secondary_category": "Raw food",
+    "desc": "Jelly stored and used as food by oversized insects. It is smooth, rich, and brings joy to those who consume it. Because of its unique biological properties, it can nourish almost any creature and never rots.",
+    "baseStats": {
+      "market_value": "8",
+      "mass": "0.025 kg",
+      "hp": "100",
+      "deterioration_rate": "6",
+      "flammability": "100%"
+    },
+    "detailedStats": {
+      "nutrition": "0.05",
+      "taste": "Fine",
+      "recreation_offset": "8%",
+      "recreation_kind": "gluttonous"
+    },
+    "crafting": {}
+  },
+  "food-25": {
+    "name": "Goose egg (unfert.)",
+    "primary_category": "Food",
+    "secondary_category": "Raw Food",
+    "desc": "Unfertilized goose egg. It can be eaten raw, but it's much, much better cooked.",
+    "baseStats": {
+      "market_value": "9",
+      "stack_limit": "75",
+      "mass": "0.15 kg",
+      "hp": "20",
+      "deterioration_rate": "2",
+      "flammability": "70%",
+      "days_to_start_rot": "15"
+    },
+    "detailedStats": {
+      "nutrition": "0.5",
+      "taste": "raw",
+      "food_poison chance": "20%"
+    },
+    "crafting": {}
+  },
+  "food-26": {
+    "name": "Turkey egg (fert.)",
+    "primary_category": "Food",
+    "secondary_category": "Raw Food",
+    "desc": "Fertilized turkey egg. If all goes well, it should hatch into a baby turkey. It can be eaten raw, but it's much better cooked.",
+    "baseStats": {
+      "market_value": "11",
+      "stack_limit": "75",
+      "mass": "0.15 kg",
+      "hp": "20",
+      "deterioration_rate": "2",
+      "flammability": "70%",
+      "days_to_start_rot": "15",
+      "min_safe temperature": "0 °C (32 °F)",
+      "max_safe temperature": "50 °C (122 °F)",
+      "spoiling_rate": "0.003%"
+    },
+    "detailedStats": {
+      "nutrition": "0.5",
+      "taste": "raw",
+      "food_poison chance": "20%"
+    },
+    "crafting": {}
+  },
+  "food-27": {
+    "name": "Goose egg (fert.)",
+    "primary_category": "Food",
+    "secondary_category": "Raw Food",
+    "desc": "Fertilized goose egg. If all goes well, it should hatch into a goose. It can be eaten raw, but it's much better cooked.",
+    "baseStats": {
+      "market_value": "11",
+      "stack_limit": "75",
+      "mass": "0.15 kg",
+      "hp": "20",
+      "deterioration_rate": "2",
+      "flammability": "70%",
+      "days_to_start_rot": "15",
+      "min_safe temperature": "0 °C (32 °F)",
+      "max_safe temperature": "50 °C (122 °F)",
+      "spoiling_rate": "0.003%"
+    },
+    "detailedStats": {
+      "nutrition": "0.5",
+      "taste": "raw",
+      "food_poison chance": "20%"
+    },
+    "crafting": {}
+  },
+  "food-28": {
+    "name": "Emu egg (fert.)",
+    "primary_category": "Food",
+    "secondary_category": "Raw Food",
+    "desc": "Fertilized emu egg. If all goes well, it should hatch into a baby emu. It can be eaten raw, but it's much better cooked.",
+    "baseStats": {
+      "market_value": "18",
+      "stack_limit": "75",
+      "mass": "0.15 kg",
+      "hp": "20",
+      "deterioration_rate": "2",
+      "flammability": "70%",
+      "days_to_start_rot": "15",
+      "min_safe temperature": "0 °C (32 °F)",
+      "max_safe temperature": "50 °C (122 °F)",
+      "spoiling_rate": "0.003%"
+    },
+    "detailedStats": {
+      "nutrition": "0.5",
+      "taste": "raw",
+      "food_poison chance": "20%"
+    },
+    "crafting": {}
+  },
+  "food-29": {
+    "name": "Cassowary egg (fert.)",
+    "primary_category": "Food",
+    "secondary_category": "Raw Food",
+    "desc": "Fertilized cassowary egg. If all goes well, it should hatch into a baby cassowary. It can be eaten raw, but it's much better cooked.",
+    "baseStats": {
+      "market_value": "19",
+      "stack_limit": "75",
+      "mass": "0.15 kg",
+      "hp": "20",
+      "deterioration_rate": "2",
+      "flammability": "70%",
+      "days_to_start_rot": "15",
+      "min_safe temperature": "0 °C (32 °F)",
+      "max_safe temperature": "50 °C (122 °F)",
+      "spoiling_rate": "0.003%"
+    },
+    "detailedStats": {
+      "nutrition": "0.5",
+      "taste": "raw",
+      "food_poison chance": "20%"
+    },
+    "crafting": {}
+  },
+  "food-30": {
+    "name": "Tortoise egg (fert.)",
+    "primary_category": "Food",
+    "secondary_category": "Raw Food",
+    "desc": "Fertilized tortoise egg. If all goes well, it should hatch into a baby tortoise. It can be eaten raw, but it's much better cooked.",
+    "baseStats": {
+      "market_value": "23",
+      "stack_limit": "75",
+      "mass": "0.15 kg",
+      "hp": "20",
+      "deterioration_rate": "2",
+      "flammability": "70%",
+      "days_to_start_rot": "15",
+      "min_safe temperature": "0 °C (32 °F)",
+      "max_safe temperature": "50 °C (122 °F)",
+      "spoiling_rate": "0.003%"
+    },
+    "detailedStats": {
+      "nutrition": "0.25",
+      "taste": "raw",
+      "food_poison chance": "20%"
+    },
+    "crafting": {}
+  },
+  "food-31": {
+    "name": "Ostrich egg (fert.)",
+    "primary_category": "Food",
+    "secondary_category": "Raw Food",
+    "desc": "Fertilized ostrich egg. If all goes well, it should hatch into a baby ostrich. It can be eaten raw, but it's much better cooked.",
+    "baseStats": {
+      "market_value": "23",
+      "stack_limit": "75",
+      "mass": "0.15 kg",
+      "hp": "20",
+      "deterioration_rate": "2",
+      "flammability": "70%",
+      "days_to_start_rot": "15",
+      "min_safe temperature": "0 °C (32 °F)",
+      "max_safe temperature": "50 °C (122 °F)",
+      "spoiling_rate": "0.003%"
+    },
+    "detailedStats": {
+      "nutrition": "0.6",
+      "taste": "raw",
+      "food_poison chance": "20%"
+    },
+    "crafting": {}
+  },
+  "food-32": {
+    "name": "Iguana egg (fert.)",
+    "primary_category": "Food",
+    "secondary_category": "Raw Food",
+    "desc": "Fertilized iguana egg. If all goes well, it should hatch into a baby iguana. It can be eaten raw, but it's much better cooked.",
+    "baseStats": {
+      "market_value": "25",
+      "stack_limit": "75",
+      "mass": "0.15 kg",
+      "hp": "20",
+      "deterioration_rate": "2",
+      "flammability": "70%",
+      "days_to_start_rot": "15",
+      "min_safe temperature": "0 °C (32 °F)",
+      "max_safe temperature": "50 °C (122 °F)",
+      "spoiling_rate": "0.003%"
+    },
+    "detailedStats": {
+      "nutrition": "0.25",
+      "taste": "raw",
+      "food_poison chance": "20%"
+    },
+    "crafting": {}
+  },
+  "food-33": {
+    "name": "Cobra egg (fert.)",
+    "primary_category": "Food",
+    "secondary_category": "Raw Food",
+    "desc": "Fertilized cobra egg. If all goes well, it should hatch into a baby cobra. It can be eaten raw, but it's much better cooked.",
+    "baseStats": {
+      "market_value": "40",
+      "stack_limit": "75",
+      "mass": "0.15 kg",
+      "hp": "20",
+      "deterioration_rate": "2",
+      "flammability": "70%",
+      "days_to_start_rot": "15",
+      "min_safe temperature": "0 °C (32 °F)",
+      "max_safe temperature": "50 °C (122 °F)",
+      "spoiling_rate": "0.003%"
+    },
+    "detailedStats": {
+      "nutrition": "0.25",
+      "taste": "raw",
+      "food_poison chance": "20%"
+    },
+    "crafting": {}
+  }
+}

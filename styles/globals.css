@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+
+.table-head {
+  position: relative;
+}
+
+.table-head tr::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 0;
+  height: 1px;
+  background-color: white;
+  opacity: 0.1;
+}
+@tailwind utilities;
